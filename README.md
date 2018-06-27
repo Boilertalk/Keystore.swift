@@ -22,7 +22,10 @@ pod 'Keystore'
 
 ## Author
 
-Koray Koska, koray@koska.at
+The awesome guys at Boilertalk :alembic:    
+...and even more awesome members from the community :purple_heart:
+
+Check out the [contributors list](https://github.com/Boilertalk/Keystore.swift/graphs/contributors) for a complete list.
 
 ## License
 

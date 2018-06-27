@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EBBB1F320E3FFA2005875FC /* StubLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBBB1F120E3FF9D005875FC /* StubLoader.swift */; };
+		0EBBB1F420E3FFA4005875FC /* mycrypto_test1.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EBBB1EF20E3FF41005875FC /* mycrypto_test1.json */; };
+		0EBBB1F920E400E9005875FC /* PrivateKeyExtractionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBBB1F620E400E3005875FC /* PrivateKeyExtractionTests.swift */; };
+		0EBBB20020E40C96005875FC /* mycrypto_test2.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EBBB1FA20E40C91005875FC /* mycrypto_test2.json */; };
+		0EBBB20120E40C99005875FC /* mycrypto_test3.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EBBB1FB20E40C91005875FC /* mycrypto_test3.json */; };
+		0EBBB20220E40C9C005875FC /* mycrypto_test4.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EBBB1FC20E40C91005875FC /* mycrypto_test4.json */; };
 		5DCC36E482931F33C8B461C4 /* Pods_Keystore_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748DD6AE6754333E10B62794 /* Pods_Keystore_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		C95FBFECDB8B40892CCC902F /* Pods_Keystore_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7811B873B602DE91460E63D1 /* Pods_Keystore_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,8 +33,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EBBB1EF20E3FF41005875FC /* mycrypto_test1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mycrypto_test1.json; sourceTree = "<group>"; };
+		0EBBB1F120E3FF9D005875FC /* StubLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubLoader.swift; sourceTree = "<group>"; };
+		0EBBB1F620E400E3005875FC /* PrivateKeyExtractionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateKeyExtractionTests.swift; sourceTree = "<group>"; };
+		0EBBB1FA20E40C91005875FC /* mycrypto_test2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mycrypto_test2.json; sourceTree = "<group>"; };
+		0EBBB1FB20E40C91005875FC /* mycrypto_test3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mycrypto_test3.json; sourceTree = "<group>"; };
+		0EBBB1FC20E40C91005875FC /* mycrypto_test4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mycrypto_test4.json; sourceTree = "<group>"; };
 		25A0701EF47871B238FF3714 /* Pods-Keystore_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keystore_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Keystore_Tests/Pods-Keystore_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		354415490FE6326251511D67 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		354415490FE6326251511D67 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Keystore_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keystore_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,14 +50,13 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* Keystore_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Keystore_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		61640EB8B517BEEE57C66AFA /* Pods-Keystore_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keystore_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Keystore_Tests/Pods-Keystore_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		64A884BABC3FD517578B1339 /* Pods-Keystore_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keystore_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Keystore_Example/Pods-Keystore_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		748DD6AE6754333E10B62794 /* Pods_Keystore_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keystore_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7811B873B602DE91460E63D1 /* Pods_Keystore_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keystore_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CA5AAC827903FA9FBA6DF7E /* Keystore.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Keystore.podspec; path = ../Keystore.podspec; sourceTree = "<group>"; };
+		9CA5AAC827903FA9FBA6DF7E /* Keystore.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Keystore.podspec; path = ../Keystore.podspec; sourceTree = "<group>"; };
 		C0E7F453CBF2645FF295AC15 /* Pods-Keystore_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keystore_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Keystore_Example/Pods-Keystore_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D6DC23FA2B608749493A2312 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D6DC23FA2B608749493A2312 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +79,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EBBB1EE20E3FEEE005875FC /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				0EBBB1FA20E40C91005875FC /* mycrypto_test2.json */,
+				0EBBB1FB20E40C91005875FC /* mycrypto_test3.json */,
+				0EBBB1FC20E40C91005875FC /* mycrypto_test4.json */,
+				0EBBB1EF20E3FF41005875FC /* mycrypto_test1.json */,
+				0EBBB1F120E3FF9D005875FC /* StubLoader.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		0EBBB1F520E400BF005875FC /* KeystoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				0EBBB1F620E400E3005875FC /* PrivateKeyExtractionTests.swift */,
+			);
+			path = KeystoreTests;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -115,7 +145,8 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				0EBBB1F520E400BF005875FC /* KeystoreTests */,
+				0EBBB1EE20E3FEEE005875FC /* Stubs */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -256,6 +287,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EBBB1F420E3FFA4005875FC /* mycrypto_test1.json in Resources */,
+				0EBBB20220E40C9C005875FC /* mycrypto_test4.json in Resources */,
+				0EBBB20020E40C96005875FC /* mycrypto_test2.json in Resources */,
+				0EBBB20120E40C99005875FC /* mycrypto_test3.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,11 +304,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Keystore_Example/Pods-Keystore_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Keystore/Keystore.framework",
+				"${BUILT_PRODUCTS_DIR}/secp256k1.swift/secp256k1.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Keystore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/secp256k1.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -352,7 +391,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				0EBBB1F320E3FFA2005875FC /* StubLoader.swift in Sources */,
+				0EBBB1F920E400E9005875FC /* PrivateKeyExtractionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +573,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Keystore_Example.app/Keystore_Example";
 			};
 			name = Debug;
 		};
@@ -550,6 +591,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Keystore_Example.app/Keystore_Example";
 			};
 			name = Release;
 		};
