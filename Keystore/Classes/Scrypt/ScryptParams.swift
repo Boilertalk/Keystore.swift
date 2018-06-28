@@ -56,11 +56,7 @@ struct ScryptParams {
     /// Initializes with default scrypt parameters and a random salt.
     init() {
         let length = 32
-        var data = Data(repeating: 0, count: length)
-        let result = data.withUnsafeMutableBytes { p in
-            SecRandomCopyBytes(kSecRandomDefault, length, p)
-        }
-        precondition(result == errSecSuccess, "Failed to generate random number")
+        let data = Data([UInt8].secureRandom(count: length) ?? [UInt8](repeating: 0, count: length))
         salt = data
     }
 
