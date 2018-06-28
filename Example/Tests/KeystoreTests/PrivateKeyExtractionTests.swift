@@ -25,16 +25,17 @@ class PrivateKeyExtractionTests: QuickSpec {
     override func spec() {
         describe("private key extraction") {
 
-            context("mycrypto keystores") {
+            context("stubs keystore private key extraction") {
 
-                let mycryptoTests = [
-                    "mycrypto_test1", "mycrypto_test2", "mycrypto_test3", "mycrypto_test4"
+                let stubTests = [
+                    "mycrypto_test1", "mycrypto_test2", "mycrypto_test3", "mycrypto_test4",
+                    "keythereum_test1", "keythereum_test2", "keythereum_test3"
                 ]
 
-                for testName in mycryptoTests {
+                for testName in stubTests {
                     guard let testData = loadStub(named: testName), let test = try? decoder.decode(KeystoreStub.self, from: testData) else {
                         it("should never happen") {
-                            expect(true) == false
+                            fail("Stub \(testName) couldn't be loaded")
                         }
                         return
                     }
@@ -48,8 +49,6 @@ class PrivateKeyExtractionTests: QuickSpec {
                     it("should extract the private key correctly") {
                         expect(privateKey) == actualPrivateKey
                     }
-
-                    // try! JSONEncoder().encode(Keystore(privateKey: privateKey!, password: test.password))
                 }
             }
         }

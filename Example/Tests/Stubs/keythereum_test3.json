@@ -1,0 +1,26 @@
+{
+  "password": "correcthorsebatterystaple",
+  "privateKey": "490127c2782fb55943beeb31943ec26f48a9a5121cd7e91799eb354d30d46529",
+  "keystore": {
+    "address": "f0c4ee355432a7c7da12bdef04543723d110d591",
+    "Crypto": {
+      "cipher": "aes-128-cbc",
+      "ciphertext": "fc221520b157d08bd51e1b220a188e36b2f53a783ed5777e4438951349dd80b33089a18f493a84f279f376edc42a370d",
+      "cipherparams": {
+        "iv": "bda427191686ac4455142bc449543129"
+      },
+      "kdf": "scrypt",
+      "kdfparams": {
+        "n": 262144,
+        "r": 8,
+        "p": 1,
+        "dklen": 32,
+        "salt": "98e3f47b814f5a55a2298cf92a2572a047c31d30c6b8bb4d1e5f60cc4a437653"
+      },
+      "mac": "f4f15a66f99a87923cc8d8fcbf2fd5d3c2f2de238d87b024113f97a37778210a",
+      "version": "1"
+    },
+    "id": "efe9ba02-56a3-42f5-9fb3-10059629c7bf",
+    "version": "1"
+  }
+}

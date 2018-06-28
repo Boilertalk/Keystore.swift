@@ -13,6 +13,10 @@
 		0EBBB20020E40C96005875FC /* mycrypto_test2.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EBBB1FA20E40C91005875FC /* mycrypto_test2.json */; };
 		0EBBB20120E40C99005875FC /* mycrypto_test3.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EBBB1FB20E40C91005875FC /* mycrypto_test3.json */; };
 		0EBBB20220E40C9C005875FC /* mycrypto_test4.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EBBB1FC20E40C91005875FC /* mycrypto_test4.json */; };
+		0EBBB20420E4484E005875FC /* KeystoreCreationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBBB20320E4484E005875FC /* KeystoreCreationTests.swift */; };
+		0EBBB20820E45042005875FC /* keythereum_test1.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EBBB20520E45042005875FC /* keythereum_test1.json */; };
+		0EBBB20920E45042005875FC /* keythereum_test2.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EBBB20620E45042005875FC /* keythereum_test2.json */; };
+		0EBBB20A20E45042005875FC /* keythereum_test3.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EBBB20720E45042005875FC /* keythereum_test3.json */; };
 		5DCC36E482931F33C8B461C4 /* Pods_Keystore_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748DD6AE6754333E10B62794 /* Pods_Keystore_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -39,6 +43,10 @@
 		0EBBB1FA20E40C91005875FC /* mycrypto_test2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mycrypto_test2.json; sourceTree = "<group>"; };
 		0EBBB1FB20E40C91005875FC /* mycrypto_test3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mycrypto_test3.json; sourceTree = "<group>"; };
 		0EBBB1FC20E40C91005875FC /* mycrypto_test4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mycrypto_test4.json; sourceTree = "<group>"; };
+		0EBBB20320E4484E005875FC /* KeystoreCreationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeystoreCreationTests.swift; sourceTree = "<group>"; };
+		0EBBB20520E45042005875FC /* keythereum_test1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = keythereum_test1.json; sourceTree = "<group>"; };
+		0EBBB20620E45042005875FC /* keythereum_test2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = keythereum_test2.json; sourceTree = "<group>"; };
+		0EBBB20720E45042005875FC /* keythereum_test3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = keythereum_test3.json; sourceTree = "<group>"; };
 		25A0701EF47871B238FF3714 /* Pods-Keystore_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keystore_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Keystore_Tests/Pods-Keystore_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		354415490FE6326251511D67 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Keystore_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keystore_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +90,9 @@
 		0EBBB1EE20E3FEEE005875FC /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
+				0EBBB20520E45042005875FC /* keythereum_test1.json */,
+				0EBBB20620E45042005875FC /* keythereum_test2.json */,
+				0EBBB20720E45042005875FC /* keythereum_test3.json */,
 				0EBBB1FA20E40C91005875FC /* mycrypto_test2.json */,
 				0EBBB1FB20E40C91005875FC /* mycrypto_test3.json */,
 				0EBBB1FC20E40C91005875FC /* mycrypto_test4.json */,
@@ -95,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				0EBBB1F620E400E3005875FC /* PrivateKeyExtractionTests.swift */,
+				0EBBB20320E4484E005875FC /* KeystoreCreationTests.swift */,
 			);
 			path = KeystoreTests;
 			sourceTree = "<group>";
@@ -289,6 +301,9 @@
 			files = (
 				0EBBB1F420E3FFA4005875FC /* mycrypto_test1.json in Resources */,
 				0EBBB20220E40C9C005875FC /* mycrypto_test4.json in Resources */,
+				0EBBB20A20E45042005875FC /* keythereum_test3.json in Resources */,
+				0EBBB20820E45042005875FC /* keythereum_test1.json in Resources */,
+				0EBBB20920E45042005875FC /* keythereum_test2.json in Resources */,
 				0EBBB20020E40C96005875FC /* mycrypto_test2.json in Resources */,
 				0EBBB20120E40C99005875FC /* mycrypto_test3.json in Resources */,
 			);
@@ -391,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EBBB20420E4484E005875FC /* KeystoreCreationTests.swift in Sources */,
 				0EBBB1F320E3FFA2005875FC /* StubLoader.swift in Sources */,
 				0EBBB1F920E400E9005875FC /* PrivateKeyExtractionTests.swift in Sources */,
 			);

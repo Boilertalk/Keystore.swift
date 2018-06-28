@@ -1,0 +1,2 @@
+github "krzyzanowskim/CryptoSwift" ~> 0.8
+github "Boilertalk/secp256k1.swift" ~> 0.1

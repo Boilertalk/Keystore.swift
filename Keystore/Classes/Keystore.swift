@@ -135,7 +135,7 @@ public struct Keystore: Codable {
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 
-        let version = try container.decode(Int.self, forKey: .version)
+        let version = try (try? container.decode(Int.self, forKey: .version)) ?? Int(container.decode(String.self, forKey: .version)) ?? container.decode(Int.self, forKey: .version)
         let id = try container.decode(String.self, forKey: .id)
         let address = try container.decode(String.self, forKey: .address)
 

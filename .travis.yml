@@ -1,14 +1,47 @@
 # references:
-# * https://www.objc.io/issues/6-build-tools/travis-ci/
+# * http://www.objc.io/issue-6/travis-ci.html
 # * https://github.com/supermarin/xcpretty#usage
 
-osx_image: xcode7.3
-language: objective-c
+# Run tests on Ubuntu and macOS
+os:
+  - linux
+  - osx
+# Ubuntu 14.04
+dist: trusty
+
+# Generic language as travis doesn't know anything about SPM and Linux
+language: generic
+sudo: required
+
+osx_image: xcode9.4
+xcode_sdk: iphonesimulator11.4
 # cache: cocoapods
 # podfile: Example/Podfile
-# before_install:
-# - gem install cocoapods # Since Travis is not always on latest version
-# - pod install --project-directory=Example
+before_install:
+  - if [ $TRAVIS_OS_NAME == "osx" ]; then instruments -s devices; fi
+  - if [ $TRAVIS_OS_NAME == "osx" ]; then gem install cocoapods; fi # Since Travis is not always on latest version
+  - if [ $TRAVIS_OS_NAME == "osx" ]; then pod repo update; fi
+  - if [ $TRAVIS_OS_NAME == "osx" ]; then pod install --project-directory=Example; fi
+  - if [ $TRAVIS_OS_NAME == "osx" ]; then
+      echo "macOS build. swiftenv will not be installed.";
+    else
+      git clone https://github.com/kylef/swiftenv.git ~/.swiftenv;
+      export SWIFTENV_ROOT="$HOME/.swiftenv";
+      export PATH="$SWIFTENV_ROOT/bin:$PATH";
+      eval "$(swiftenv init -)";
+
+      swiftenv install $(cat .swift-version);
+    fi
 script:
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/Keystore.xcworkspace -scheme Keystore-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
-- pod lib lint
+  # Output something every 10 minutes or Travis kills the job
+  - while sleep 60; do echo "=====[ $SECONDS seconds still running ]====="; done &
+  # Actual script
+  - if [ $TRAVIS_OS_NAME == "osx" ]; then
+      set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/Keystore.xcworkspace -scheme Keystore-Example -sdk iphonesimulator11.4 -destination 'platform=iOS Simulator,name=iPhone X,OS=11.4' ONLY_ACTIVE_ARCH=YES | xcpretty;
+      pod lib lint --allow-warnings;
+    fi
+  - swift build
+  - swift build -c release
+  - swift test
+  # Kill background echo job
+  - kill %1

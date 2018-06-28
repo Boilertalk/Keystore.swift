@@ -1,0 +1,26 @@
+{
+  "password": "testpassword",
+  "privateKey": "490127c2782fb55943beeb31943ec26f48a9a5121cd7e91799eb354d30d46529",
+  "keystore": {
+    "address": "f0c4ee355432a7c7da12bdef04543723d110d591",
+    "Crypto": {
+      "cipher": "aes-128-cbc",
+      "ciphertext": "097cc168892c41872ba92af7a359708f2e9f2f420465684cf84bb2d1a7351e37a7746607d3845ab91ce82cbf9ba54c69",
+      "cipherparams": {
+        "iv": "bda427191686ac4455142bc449543129"
+      },
+      "kdf": "scrypt",
+      "kdfparams": {
+        "n": 262144,
+        "r": 8,
+        "p": 1,
+        "dklen": 32,
+        "salt": "98e3f47b814f5a55a2298cf92a2572a047c31d30c6b8bb4d1e5f60cc4a437653"
+      },
+      "mac": "4c5d82b039d482b51d2f6ca09f1ff9b44f6e4a35f5bf0155cb1a163c75742278",
+      "version": "1"
+    },
+    "id": "b5d5ef3a-d42e-4eeb-86ae-51a89131e38e",
+    "version": "1"
+  }
+}
