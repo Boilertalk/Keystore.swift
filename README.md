@@ -25,7 +25,8 @@
 
 # :alembic: Keystore
 
-Keystore.swift makes it easy to extract private keys from Ethereum keystore files and generate keystore files from existing private keys.
+Keystore.swift makes it easy to extract private keys from Ethereum keystore files and generate keystore files from existing private keys.    
+This library belongs to our Swift Crypto suite. For a pure Swift Ethereum Web3 library check out [Web3.swift](https://github.com/Boilertalk/Web3.swift)!
 
 ## Example
 
