@@ -1,12 +1,8 @@
 use_frameworks!
 
-target 'Keystore_Example' do
+target 'Keystore_Tests' do
   pod 'Keystore', :path => '../'
 
-  target 'Keystore_Tests' do
-    inherit! :search_paths
-
-    pod 'Quick', '~> 1.2.0'
-    pod 'Nimble', '~> 7.0.2'
-  end
+  pod 'Quick', '~> 1.2.0'
+  pod 'Nimble', '~> 7.0.2'
 end

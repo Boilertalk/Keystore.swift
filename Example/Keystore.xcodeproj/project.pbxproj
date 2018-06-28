@@ -7,158 +7,108 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0EBBB1F320E3FFA2005875FC /* StubLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBBB1F120E3FF9D005875FC /* StubLoader.swift */; };
-		0EBBB1F420E3FFA4005875FC /* mycrypto_test1.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EBBB1EF20E3FF41005875FC /* mycrypto_test1.json */; };
-		0EBBB1F920E400E9005875FC /* PrivateKeyExtractionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBBB1F620E400E3005875FC /* PrivateKeyExtractionTests.swift */; };
-		0EBBB20020E40C96005875FC /* mycrypto_test2.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EBBB1FA20E40C91005875FC /* mycrypto_test2.json */; };
-		0EBBB20120E40C99005875FC /* mycrypto_test3.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EBBB1FB20E40C91005875FC /* mycrypto_test3.json */; };
-		0EBBB20220E40C9C005875FC /* mycrypto_test4.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EBBB1FC20E40C91005875FC /* mycrypto_test4.json */; };
-		0EBBB20420E4484E005875FC /* KeystoreCreationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBBB20320E4484E005875FC /* KeystoreCreationTests.swift */; };
-		0EBBB20820E45042005875FC /* keythereum_test1.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EBBB20520E45042005875FC /* keythereum_test1.json */; };
-		0EBBB20920E45042005875FC /* keythereum_test2.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EBBB20620E45042005875FC /* keythereum_test2.json */; };
-		0EBBB20A20E45042005875FC /* keythereum_test3.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EBBB20720E45042005875FC /* keythereum_test3.json */; };
-		5DCC36E482931F33C8B461C4 /* Pods_Keystore_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748DD6AE6754333E10B62794 /* Pods_Keystore_Example.framework */; };
-		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
-		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
-		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		C95FBFECDB8B40892CCC902F /* Pods_Keystore_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7811B873B602DE91460E63D1 /* Pods_Keystore_Tests.framework */; };
+		0EBBB21720E472E5005875FC /* mycrypto_test1.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EBBB20F20E472E4005875FC /* mycrypto_test1.json */; };
+		0EBBB21820E472E5005875FC /* mycrypto_test2.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EBBB21020E472E4005875FC /* mycrypto_test2.json */; };
+		0EBBB21920E472E5005875FC /* mycrypto_test4.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EBBB21120E472E4005875FC /* mycrypto_test4.json */; };
+		0EBBB21A20E472E5005875FC /* keythereum_test2.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EBBB21220E472E5005875FC /* keythereum_test2.json */; };
+		0EBBB21B20E472E5005875FC /* keythereum_test3.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EBBB21320E472E5005875FC /* keythereum_test3.json */; };
+		0EBBB21C20E472E5005875FC /* StubLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBBB21420E472E5005875FC /* StubLoader.swift */; };
+		0EBBB21D20E472E5005875FC /* mycrypto_test3.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EBBB21520E472E5005875FC /* mycrypto_test3.json */; };
+		0EBBB21E20E472E5005875FC /* keythereum_test1.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EBBB21620E472E5005875FC /* keythereum_test1.json */; };
+		0EBBB22120E472EB005875FC /* KeystoreCreationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBBB21F20E472EB005875FC /* KeystoreCreationTests.swift */; };
+		0EBBB22220E472EB005875FC /* PrivateKeyExtractionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBBB22020E472EB005875FC /* PrivateKeyExtractionTests.swift */; };
+		FA79570C37A227E1E440E6B2 /* Pods_Keystore_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D113F75E060A9752B0A826 /* Pods_Keystore_Tests.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
-			remoteInfo = Keystore;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		0EBBB1EF20E3FF41005875FC /* mycrypto_test1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mycrypto_test1.json; sourceTree = "<group>"; };
-		0EBBB1F120E3FF9D005875FC /* StubLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubLoader.swift; sourceTree = "<group>"; };
-		0EBBB1F620E400E3005875FC /* PrivateKeyExtractionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateKeyExtractionTests.swift; sourceTree = "<group>"; };
-		0EBBB1FA20E40C91005875FC /* mycrypto_test2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mycrypto_test2.json; sourceTree = "<group>"; };
-		0EBBB1FB20E40C91005875FC /* mycrypto_test3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mycrypto_test3.json; sourceTree = "<group>"; };
-		0EBBB1FC20E40C91005875FC /* mycrypto_test4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mycrypto_test4.json; sourceTree = "<group>"; };
-		0EBBB20320E4484E005875FC /* KeystoreCreationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeystoreCreationTests.swift; sourceTree = "<group>"; };
-		0EBBB20520E45042005875FC /* keythereum_test1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = keythereum_test1.json; sourceTree = "<group>"; };
-		0EBBB20620E45042005875FC /* keythereum_test2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = keythereum_test2.json; sourceTree = "<group>"; };
-		0EBBB20720E45042005875FC /* keythereum_test3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = keythereum_test3.json; sourceTree = "<group>"; };
-		25A0701EF47871B238FF3714 /* Pods-Keystore_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keystore_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Keystore_Tests/Pods-Keystore_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		354415490FE6326251511D67 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		607FACD01AFB9204008FA782 /* Keystore_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keystore_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0ACBF08A51AE1589BBA73DFA /* Pods-Keystore_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keystore_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Keystore_Tests/Pods-Keystore_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		0EBBB20F20E472E4005875FC /* mycrypto_test1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mycrypto_test1.json; sourceTree = "<group>"; };
+		0EBBB21020E472E4005875FC /* mycrypto_test2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mycrypto_test2.json; sourceTree = "<group>"; };
+		0EBBB21120E472E4005875FC /* mycrypto_test4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mycrypto_test4.json; sourceTree = "<group>"; };
+		0EBBB21220E472E5005875FC /* keythereum_test2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = keythereum_test2.json; sourceTree = "<group>"; };
+		0EBBB21320E472E5005875FC /* keythereum_test3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = keythereum_test3.json; sourceTree = "<group>"; };
+		0EBBB21420E472E5005875FC /* StubLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubLoader.swift; sourceTree = "<group>"; };
+		0EBBB21520E472E5005875FC /* mycrypto_test3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mycrypto_test3.json; sourceTree = "<group>"; };
+		0EBBB21620E472E5005875FC /* keythereum_test1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = keythereum_test1.json; sourceTree = "<group>"; };
+		0EBBB21F20E472EB005875FC /* KeystoreCreationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeystoreCreationTests.swift; sourceTree = "<group>"; };
+		0EBBB22020E472EB005875FC /* PrivateKeyExtractionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateKeyExtractionTests.swift; sourceTree = "<group>"; };
+		11D113F75E060A9752B0A826 /* Pods_Keystore_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keystore_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B02EA00C9747F8C9346258C /* Pods-Keystore_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keystore_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Keystore_Tests/Pods-Keystore_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4E289193E53A0B506FD9AB7F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* Keystore_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Keystore_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		61640EB8B517BEEE57C66AFA /* Pods-Keystore_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keystore_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Keystore_Tests/Pods-Keystore_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		64A884BABC3FD517578B1339 /* Pods-Keystore_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keystore_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Keystore_Example/Pods-Keystore_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		748DD6AE6754333E10B62794 /* Pods_Keystore_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keystore_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7811B873B602DE91460E63D1 /* Pods_Keystore_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keystore_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CA5AAC827903FA9FBA6DF7E /* Keystore.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Keystore.podspec; path = ../Keystore.podspec; sourceTree = "<group>"; };
-		C0E7F453CBF2645FF295AC15 /* Pods-Keystore_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keystore_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Keystore_Example/Pods-Keystore_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D6DC23FA2B608749493A2312 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		72876BBB08E983C55275832B /* Keystore.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Keystore.podspec; path = ../Keystore.podspec; sourceTree = "<group>"; };
+		9610DE88BE393FD3C2CBF7BC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		607FACCD1AFB9204008FA782 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5DCC36E482931F33C8B461C4 /* Pods_Keystore_Example.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		607FACE21AFB9204008FA782 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C95FBFECDB8B40892CCC902F /* Pods_Keystore_Tests.framework in Frameworks */,
+				FA79570C37A227E1E440E6B2 /* Pods_Keystore_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0EBBB1EE20E3FEEE005875FC /* Stubs */ = {
+		0EBBB20D20E472B9005875FC /* KeystoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				0EBBB20520E45042005875FC /* keythereum_test1.json */,
-				0EBBB20620E45042005875FC /* keythereum_test2.json */,
-				0EBBB20720E45042005875FC /* keythereum_test3.json */,
-				0EBBB1FA20E40C91005875FC /* mycrypto_test2.json */,
-				0EBBB1FB20E40C91005875FC /* mycrypto_test3.json */,
-				0EBBB1FC20E40C91005875FC /* mycrypto_test4.json */,
-				0EBBB1EF20E3FF41005875FC /* mycrypto_test1.json */,
-				0EBBB1F120E3FF9D005875FC /* StubLoader.swift */,
+				0EBBB21F20E472EB005875FC /* KeystoreCreationTests.swift */,
+				0EBBB22020E472EB005875FC /* PrivateKeyExtractionTests.swift */,
+			);
+			path = KeystoreTests;
+			sourceTree = "<group>";
+		};
+		0EBBB20E20E472D0005875FC /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				0EBBB21620E472E5005875FC /* keythereum_test1.json */,
+				0EBBB21220E472E5005875FC /* keythereum_test2.json */,
+				0EBBB21320E472E5005875FC /* keythereum_test3.json */,
+				0EBBB20F20E472E4005875FC /* mycrypto_test1.json */,
+				0EBBB21020E472E4005875FC /* mycrypto_test2.json */,
+				0EBBB21520E472E5005875FC /* mycrypto_test3.json */,
+				0EBBB21120E472E4005875FC /* mycrypto_test4.json */,
+				0EBBB21420E472E5005875FC /* StubLoader.swift */,
 			);
 			path = Stubs;
 			sourceTree = "<group>";
 		};
-		0EBBB1F520E400BF005875FC /* KeystoreTests */ = {
+		1EA93063E73C350EE49D11A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0EBBB1F620E400E3005875FC /* PrivateKeyExtractionTests.swift */,
-				0EBBB20320E4484E005875FC /* KeystoreCreationTests.swift */,
+				11D113F75E060A9752B0A826 /* Pods_Keystore_Tests.framework */,
 			);
-			path = KeystoreTests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for Keystore */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				BB0C5A0EF72AA0F1FAAA95BD /* Pods */,
-				ECD2E72715CABCB48EF62476 /* Frameworks */,
+				A14FED6D31E90A2C362448EB /* Pods */,
+				1EA93063E73C350EE49D11A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* Keystore_Example.app */,
 				607FACE51AFB9204008FA782 /* Keystore_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for Keystore */ = {
-			isa = PBXGroup;
-			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
-				607FACD31AFB9204008FA782 /* Supporting Files */,
-			);
-			name = "Example for Keystore";
-			path = Keystore;
-			sourceTree = "<group>";
-		};
-		607FACD31AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACD41AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				0EBBB1F520E400BF005875FC /* KeystoreTests */,
-				0EBBB1EE20E3FEEE005875FC /* Stubs */,
+				0EBBB20E20E472D0005875FC /* Stubs */,
+				0EBBB20D20E472B9005875FC /* KeystoreTests */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -175,69 +125,38 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				9CA5AAC827903FA9FBA6DF7E /* Keystore.podspec */,
-				D6DC23FA2B608749493A2312 /* README.md */,
-				354415490FE6326251511D67 /* LICENSE */,
+				72876BBB08E983C55275832B /* Keystore.podspec */,
+				4E289193E53A0B506FD9AB7F /* README.md */,
+				9610DE88BE393FD3C2CBF7BC /* LICENSE */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		BB0C5A0EF72AA0F1FAAA95BD /* Pods */ = {
+		A14FED6D31E90A2C362448EB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				64A884BABC3FD517578B1339 /* Pods-Keystore_Example.debug.xcconfig */,
-				C0E7F453CBF2645FF295AC15 /* Pods-Keystore_Example.release.xcconfig */,
-				61640EB8B517BEEE57C66AFA /* Pods-Keystore_Tests.debug.xcconfig */,
-				25A0701EF47871B238FF3714 /* Pods-Keystore_Tests.release.xcconfig */,
+				1B02EA00C9747F8C9346258C /* Pods-Keystore_Tests.debug.xcconfig */,
+				0ACBF08A51AE1589BBA73DFA /* Pods-Keystore_Tests.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		ECD2E72715CABCB48EF62476 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				748DD6AE6754333E10B62794 /* Pods_Keystore_Example.framework */,
-				7811B873B602DE91460E63D1 /* Pods_Keystore_Tests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACCF1AFB9204008FA782 /* Keystore_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Keystore_Example" */;
-			buildPhases = (
-				118AEF30360CB11552AEAB7E /* [CP] Check Pods Manifest.lock */,
-				607FACCC1AFB9204008FA782 /* Sources */,
-				607FACCD1AFB9204008FA782 /* Frameworks */,
-				607FACCE1AFB9204008FA782 /* Resources */,
-				0ABB6DEF0CECC7BAD55AFC6A /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Keystore_Example;
-			productName = Keystore;
-			productReference = 607FACD01AFB9204008FA782 /* Keystore_Example.app */;
-			productType = "com.apple.product-type.application";
-		};
 		607FACE41AFB9204008FA782 /* Keystore_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Keystore_Tests" */;
 			buildPhases = (
-				6D0E5DAC7578ACF033C86EA8 /* [CP] Check Pods Manifest.lock */,
+				176DAEEDAF622A26FB45F1F7 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				54E8BBC577DC9BC8BBA12AB6 /* [CP] Embed Pods Frameworks */,
+				DFD5C215CE010F52BAE887F3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
 			);
 			name = Keystore_Tests;
 			productName = Tests;
@@ -254,13 +173,9 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 0940;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -278,101 +193,30 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* Keystore_Example */,
 				607FACE41AFB9204008FA782 /* Keystore_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		607FACCE1AFB9204008FA782 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
-				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		607FACE31AFB9204008FA782 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EBBB1F420E3FFA4005875FC /* mycrypto_test1.json in Resources */,
-				0EBBB20220E40C9C005875FC /* mycrypto_test4.json in Resources */,
-				0EBBB20A20E45042005875FC /* keythereum_test3.json in Resources */,
-				0EBBB20820E45042005875FC /* keythereum_test1.json in Resources */,
-				0EBBB20920E45042005875FC /* keythereum_test2.json in Resources */,
-				0EBBB20020E40C96005875FC /* mycrypto_test2.json in Resources */,
-				0EBBB20120E40C99005875FC /* mycrypto_test3.json in Resources */,
+				0EBBB21E20E472E5005875FC /* keythereum_test1.json in Resources */,
+				0EBBB21720E472E5005875FC /* mycrypto_test1.json in Resources */,
+				0EBBB21A20E472E5005875FC /* keythereum_test2.json in Resources */,
+				0EBBB21D20E472E5005875FC /* mycrypto_test3.json in Resources */,
+				0EBBB21820E472E5005875FC /* mycrypto_test2.json in Resources */,
+				0EBBB21B20E472E5005875FC /* keythereum_test3.json in Resources */,
+				0EBBB21920E472E5005875FC /* mycrypto_test4.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0ABB6DEF0CECC7BAD55AFC6A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Keystore_Example/Pods-Keystore_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Keystore/Keystore.framework",
-				"${BUILT_PRODUCTS_DIR}/secp256k1.swift/secp256k1.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Keystore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/secp256k1.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Keystore_Example/Pods-Keystore_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		118AEF30360CB11552AEAB7E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Keystore_Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		54E8BBC577DC9BC8BBA12AB6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Keystore_Tests/Pods-Keystore_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Keystore_Tests/Pods-Keystore_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6D0E5DAC7578ACF033C86EA8 /* [CP] Check Pods Manifest.lock */ = {
+		176DAEEDAF622A26FB45F1F7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -390,56 +234,46 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DFD5C215CE010F52BAE887F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Keystore_Tests/Pods-Keystore_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Keystore/Keystore.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/secp256k1.swift/secp256k1.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Keystore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/secp256k1.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Keystore_Tests/Pods-Keystore_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		607FACCC1AFB9204008FA782 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		607FACE11AFB9204008FA782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EBBB20420E4484E005875FC /* KeystoreCreationTests.swift in Sources */,
-				0EBBB1F320E3FFA2005875FC /* StubLoader.swift in Sources */,
-				0EBBB1F920E400E9005875FC /* PrivateKeyExtractionTests.swift in Sources */,
+				0EBBB22120E472EB005875FC /* KeystoreCreationTests.swift in Sources */,
+				0EBBB22220E472EB005875FC /* PrivateKeyExtractionTests.swift in Sources */,
+				0EBBB21C20E472E5005875FC /* StubLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* Keystore_Example */;
-			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDF1AFB9204008FA782 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		607FACED1AFB9204008FA782 /* Debug */ = {
@@ -541,40 +375,11 @@
 			};
 			name = Release;
 		};
-		607FACF01AFB9204008FA782 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64A884BABC3FD517578B1339 /* Pods-Keystore_Example.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Keystore/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		607FACF11AFB9204008FA782 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0E7F453CBF2645FF295AC15 /* Pods-Keystore_Example.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Keystore/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61640EB8B517BEEE57C66AFA /* Pods-Keystore_Tests.debug.xcconfig */;
+			baseConfigurationReference = 1B02EA00C9747F8C9346258C /* Pods-Keystore_Tests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -587,16 +392,17 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Keystore_Example.app/Keystore_Example";
 			};
 			name = Debug;
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25A0701EF47871B238FF3714 /* Pods-Keystore_Tests.release.xcconfig */;
+			baseConfigurationReference = 0ACBF08A51AE1589BBA73DFA /* Pods-Keystore_Tests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -607,7 +413,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Keystore_Example.app/Keystore_Example";
 			};
 			name = Release;
 		};
@@ -619,15 +424,6 @@
 			buildConfigurations = (
 				607FACED1AFB9204008FA782 /* Debug */,
 				607FACEE1AFB9204008FA782 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Keystore_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				607FACF01AFB9204008FA782 /* Debug */,
-				607FACF11AFB9204008FA782 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
