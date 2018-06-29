@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://travis-ci.com/Boilertalk/Keystore.swift">
-    <img src="http://img.shields.io/travis/Boilertalk/Keystore.swift.svg?style=flat" alt="CI Status">
+    <img src="https://travis-ci.com/Boilertalk/Keystore.swift.svg?branch=master" alt="CI Status">
   </a>
   <a href="http://cocoapods.org/pods/Keystore">
     <img src="https://img.shields.io/cocoapods/v/Keystore.svg?style=flat" alt="Version">
