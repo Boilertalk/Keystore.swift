@@ -1,16 +1,16 @@
 PODS:
-  - CryptoSwift (0.10.0)
-  - Keystore (0.1.0):
-    - CryptoSwift (~> 0.8)
+  - CryptoSwift (1.0.0)
+  - Keystore (0.2.0):
+    - CryptoSwift (~> 1.0)
     - secp256k1.swift (~> 0.1)
-  - Nimble (7.0.3)
-  - Quick (1.2.0)
+  - Nimble (8.0.2)
+  - Quick (2.1.0)
   - secp256k1.swift (0.1.4)
 
 DEPENDENCIES:
   - Keystore (from `../`)
-  - Nimble (~> 7.0.2)
-  - Quick (~> 1.2.0)
+  - Nimble (~> 8.0.2)
+  - Quick (~> 2.1.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -24,12 +24,12 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CryptoSwift: 6c778d69282bed3b4e975ff97a79d074f20bb011
-  Keystore: 22b3f9a93abebc448096879f7e0149496b54807d
-  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
-  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  CryptoSwift: d81eeaa59dc5a8d03720fe919a6fd07b51f7439f
+  Keystore: 5f925d4b604112f259fcf25812115d02daeb30e6
+  Nimble: 622629381bda1dd5678162f21f1368cec7cbba60
+  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
   secp256k1.swift: a7e7a214f6db6ce5db32cc6b2b45e5c4dd633634
 
-PODFILE CHECKSUM: 36a37fc914f6211f4c81d557fdee40bbd28adbfa
+PODFILE CHECKSUM: 2dd4fd7fd874c3ae88ba80a6c3de818b0b8e7d30
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.3

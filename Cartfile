@@ -1,2 +1,2 @@
-github "krzyzanowskim/CryptoSwift" ~> 0.8
+github "krzyzanowskim/CryptoSwift" ~> 1.0
 github "Boilertalk/secp256k1.swift" ~> 0.1

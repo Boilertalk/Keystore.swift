@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Keystore'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'Ethereum keystore library'
 
   s.description      = <<-DESC
@@ -21,7 +21,7 @@ A library which generates Ethereum keystore files from private keys and extracts
 
   s.source_files = 'Keystore/Classes/**/*'
 
-  s.dependency 'CryptoSwift', '~> 0.8'
+  s.dependency 'CryptoSwift', '~> 1.0'
   s.dependency 'secp256k1.swift', '~> 0.1'
 
   # s.resource_bundles = {
