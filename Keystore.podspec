@@ -19,6 +19,8 @@ A library which generates Ethereum keystore files from private keys and extracts
   s.tvos.deployment_target = '9.0'
   s.watchos.deployment_target = '2.0'
 
+  s.swift_version = '5.0.1'
+
   s.source_files = 'Keystore/Classes/**/*'
 
   s.dependency 'CryptoSwift', '~> 1.0'
