@@ -131,7 +131,7 @@ public struct KeystoreFactory {
             throw Error.kdfInputsMalformed
         }
 
-        return try Data(bytes: PKCS5.PBKDF2(password: [UInt8](passwordData), salt: [UInt8](saltData), iterations: c, keyLength: kdfparams.dklen, variant: .sha256).calculate())
+        return try Data(PKCS5.PBKDF2(password: [UInt8](passwordData), salt: [UInt8](saltData), iterations: c, keyLength: kdfparams.dklen, variant: .sha256).calculate())
     }
 
     public enum Error: Swift.Error {

@@ -43,7 +43,7 @@ final class Scrypt {
         }
 
         let result = try scrypt(password: passwordData.bytes, salt: params.salt.bytes)
-        return Data(bytes: result)
+        return Data(result)
     }
 
     /// Computes scrypt.
