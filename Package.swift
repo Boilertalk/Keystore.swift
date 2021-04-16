@@ -1,9 +1,12 @@
-// swift-tools-version:4.0
+// swift-tools-version:5.3
 
 import PackageDescription
 
 let package = Package(
     name: "Keystore",
+    platforms: [
+      .macOS(.v10_12), .iOS(.v9)
+    ],
     products: [
         .library(
             name: "Keystore",
@@ -11,8 +14,8 @@ let package = Package(
     ],
     dependencies: [
         // Package dependencies
-        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.0.0"),
-        .package(url: "https://github.com/Boilertalk/secp256k1.swift.git", from: "0.1.1"),
+        .package(name: "CryptoSwift", url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.0.0"),
+        .package(name: "secp256k1", url: "https://github.com/Boilertalk/secp256k1.swift.git", from: "0.1.1"),
 
         // Test dependencies
         .package(url: "https://github.com/Quick/Quick.git", from: "2.1.0"),
@@ -22,10 +25,11 @@ let package = Package(
         .target(
             name: "Keystore",
             dependencies: ["CryptoSwift", "secp256k1"],
-            path: "Keystore/Classes",
-            sources: ["."]),
+            path: "Keystore/Classes"),
+//            sources: ["."]),
         .testTarget(
             name: "KeystoreTests",
             dependencies: ["Keystore", "Quick", "Nimble"])
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )
