@@ -4,13 +4,13 @@ import PackageDescription
 
 let package = Package(
     name: "Keystore",
+    platforms: [
+        .macOS(.v10_12),
+    ],
     products: [
         .library(
             name: "Keystore",
             targets: ["Keystore"]),
-    ],
-    platforms: [
-        .macOS(.v10_12),
     ],
     dependencies: [
         // Package dependencies
