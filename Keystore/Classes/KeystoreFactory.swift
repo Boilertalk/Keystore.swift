@@ -68,17 +68,19 @@ public struct KeystoreFactory {
     /// - returns: The created instance of `Keystore`.
     ///
     /// - throws: Some `KeystoreFactory.Error` if any step fails.
-    public static func keystore(from privateKey: [UInt8], password: String, kdf: Keystore.Crypto.KDFType = .scrypt, cipher: IVBlockModeType = .ctr) throws -> Keystore {
+    public static func keystore(from privateKey: [UInt8], password: String, kdf: Keystore.Crypto.KDFType = .scrypt, cipher: IVBlockModeType = .ctr, rounds: Int? = nil) throws -> Keystore {
         guard let iv = [UInt8].secureRandom(count: 16), let salt = [UInt8].secureRandom(count: 32) else {
             throw Error.bytesGenerationFailed
         }
 
+        let rounds = rounds ?? 8192
+
         let kdfparams: Keystore.Crypto.KDFParams
         switch kdf {
         case .scrypt:
-            kdfparams = Keystore.Crypto.KDFParams(salt: Data(salt).hexString, dklen: 32, n: 8192, r: 8, p: 1)
+            kdfparams = Keystore.Crypto.KDFParams(salt: Data(salt).hexString, dklen: 32, n: rounds, r: 8, p: 1)
         case .pbkdf2:
-            kdfparams = Keystore.Crypto.KDFParams(salt: Data(salt).hexString, dklen: 32, prf: "hmac-sha256", c: 8192)
+            kdfparams = Keystore.Crypto.KDFParams(salt: Data(salt).hexString, dklen: 32, prf: "hmac-sha256", c: rounds)
         }
 
         let key = try deriveKey(password: password, kdf: kdf, kdfparams: kdfparams)

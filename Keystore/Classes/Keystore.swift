@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CryptoSwift
 
 public struct Keystore: Codable {
 
@@ -18,8 +19,8 @@ public struct Keystore: Codable {
     /// - parameter password: The password to use for the encryption.
     ///
     /// - throws: Error if any step fails.
-    public init(privateKey: [UInt8], password: String) throws {
-        self = try KeystoreFactory.keystore(from: privateKey, password: password)
+    public init(privateKey: [UInt8], password: String, kdf: Keystore.Crypto.KDFType = .scrypt, cipher: IVBlockModeType = .ctr, rounds: Int? = nil) throws {
+        self = try KeystoreFactory.keystore(from: privateKey, password: password, kdf: kdf, cipher: cipher, rounds: rounds)
     }
 
     /// Extracts the private key from this keystore with the given password.
