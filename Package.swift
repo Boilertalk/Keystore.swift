@@ -9,6 +9,9 @@ let package = Package(
             name: "Keystore",
             targets: ["Keystore"]),
     ],
+    platforms: [
+        .macOS(.v10_12),
+    ],
     dependencies: [
         // Package dependencies
         .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.0.0"),
