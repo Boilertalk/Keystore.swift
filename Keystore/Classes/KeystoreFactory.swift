@@ -53,7 +53,7 @@ public struct KeystoreFactory {
             throw Error.cipherNotAvailable
         }
 
-        let aes = try AES(key: [UInt8](usableKey), blockMode: blockmode, padding: .pkcs7)
+        let aes = try AES(key: [UInt8](usableKey), blockMode: blockmode, padding: .noPadding)
 
         return try aes.decrypt([UInt8](ciphertextData))
     }
