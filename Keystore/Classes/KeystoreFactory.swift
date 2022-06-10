@@ -90,7 +90,7 @@ public struct KeystoreFactory {
         let usableKey = key[0..<16]
 
         let blockMode = cipher.blockMode(iv: iv)
-        let aes = try AES(key: [UInt8](usableKey), blockMode: blockMode, padding: .pkcs7)
+        let aes = try AES(key: [UInt8](usableKey), blockMode: blockMode, padding: .noPadding)
 
         let ciphertextData = try Data(aes.encrypt(privateKey))
         let ciphertext = ciphertextData.hexString
