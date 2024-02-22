@@ -1,11 +1,16 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.5
 
 import PackageDescription
 
 let package = Package(
     name: "Keystore",
     platforms: [
-        .macOS(.v10_12),
+       .iOS(.v13),
+       .macOS(.v10_15),
+       .watchOS(.v6),
+       .tvOS(.v13),
+       .macCatalyst(.v14),
+       .driverKit(.v20),
     ],
     products: [
         .library(
@@ -14,21 +19,29 @@ let package = Package(
     ],
     dependencies: [
         // Package dependencies
-        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.0.0"),
-        .package(url: "https://github.com/Boilertalk/secp256k1.swift.git", from: "0.1.1"),
+        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.8.1"),
+        .package(url: "https://github.com/Boilertalk/secp256k1.swift.git", from: "0.1.7"),
 
         // Test dependencies
-        .package(url: "https://github.com/Quick/Quick.git", from: "2.1.0"),
-        .package(url: "https://github.com/Quick/Nimble.git", from: "8.0.2")
+        .package(url: "https://github.com/Quick/Quick.git", from: "5.0.1"),
+        .package(url: "https://github.com/Quick/Nimble.git", from: "10.0.0")
     ],
     targets: [
         .target(
             name: "Keystore",
-            dependencies: ["CryptoSwift", "secp256k1"],
-            path: "Keystore/Classes",
-            sources: ["."]),
+            dependencies: [
+                .product(name: "CryptoSwift", package: "CryptoSwift"),
+                .product(name: "secp256k1", package: "secp256k1.swift"),
+            ],
+            path: "Sources",
+            sources: ["Keystore"]),
         .testTarget(
             name: "KeystoreTests",
-            dependencies: ["Keystore", "Quick", "Nimble"])
+            dependencies: [
+                .target(name: "Keystore"),
+                .product(name: "Quick", package: "Quick"),
+                .product(name: "Nimble", package: "Nimble"),
+            ],
+            resources: [.copy("Stubs")])
     ]
 )

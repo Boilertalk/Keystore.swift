@@ -12,10 +12,15 @@ import XCTest
 import Quick
 @testable import KeystoreTests
 
-QCKMain([
-    // All Keystore Tests
-    KeystoreCreationTests.self,
-    PrivateKeyExtractionTests.self
-])
+@main struct Main {
+    static func main() {
+        QCKMain([
+            // All Keystore Tests
+            KeystoreCreationTests.self,
+            PrivateKeyExtractionTests.self,
+            ETH2PrivateKeyExtractionTests.self,
+        ]), configurations: [], testCases: [])
+    }
+}
 
 #endif

@@ -1,8 +1,0 @@
-use_frameworks!
-
-target 'Keystore_Tests' do
-  pod 'Keystore', :path => '../'
-
-  pod 'Quick', '~> 2.1.0'
-  pod 'Nimble', '~> 8.0.2'
-end
