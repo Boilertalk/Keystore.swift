@@ -121,8 +121,14 @@ public struct KeystoreFactory {
                 throw Error.kdfInputsMalformed
             }
 
-            let params = try ScryptParams(salt: saltData, n: n, r: r, p: p, desiredKeyLength: kdfparams.dklen)
-            return try Scrypt(params: params).calculate(password: password)
+            return Data(try Scrypt(
+                password: password.bytes,
+                salt: saltData.bytes,
+                dkLen: kdfparams.dklen,
+                N: n,
+                r: r,
+                p: p
+            ).calculate())
         }
 
         // PBKDF2

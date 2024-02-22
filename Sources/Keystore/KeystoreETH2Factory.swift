@@ -76,7 +76,7 @@ public struct KeystoreETH2Factory {
                 throw Error.kdfInputsMalformed
             }
 
-            let scrypt = try CryptoSwift.Scrypt(
+            let scrypt = try Scrypt(
                 password: password.bytes,
                 salt: saltData.bytes,
                 dkLen: kdf.params.dklen,
