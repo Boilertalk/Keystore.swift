@@ -28,38 +28,23 @@
 Keystore.swift makes it easy to extract private keys from Ethereum keystore files and generate keystore files from existing private keys.    
 This library belongs to our Swift Crypto suite. For a pure Swift Ethereum Web3 library check out [Web3.swift](https://github.com/Boilertalk/Web3.swift)!
 
+This library also supports EIP 2335 (BLS/ETH2) keystores.
+
 ## Example
 
 Check the usage below or look through the repositories tests.
 
 ## Installation
 
-### CocoaPods
-
-Keystore is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your `Podfile`:
-
-```ruby
-pod 'Keystore'
-```
-
-### Carthage
-
-Keystore is compatible with [Carthage](https://github.com/Carthage/Carthage), a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To install it, simply add the following line to your `Cartfile`:
-
-```
-github "Boilertalk/Keystore.swift"
-```
-
-You will also have to install the dependencies, which can be found in our [Cartfile](Cartfile).
+We only support Swift Package Manager. Everything else is outdated.
 
 ### Swift Package Manager
 
-Keystore is compatible with Swift Package Manager v4 (Swift 4 and above). Simply add it to the dependencies in your `Package.swift`.
+Keystore is compatible with Swift Package Manager v5 (Swift 5 and above). Simply add it to the dependencies in your `Package.swift`.
 
 ```Swift
 dependencies: [
-    .package(url: "https://github.com/Boilertalk/Keystore.swift.git", from: "0.2.0")
+    .package(url: "https://github.com/Boilertalk/Keystore.swift.git", from: "0.3.0")
 ]
 ```
 
@@ -69,7 +54,9 @@ And then add it to your target dependencies:
 targets: [
     .target(
         name: "MyProject",
-        dependencies: ["Keystore"]),
+        dependencies: [
+            .product(name: "Keystore", package: "Keystore.swift"),
+        ]),
     .testTarget(
         name: "MyProjectTests",
         dependencies: ["MyProject"])
@@ -83,6 +70,8 @@ import Keystore
 ```
 
 ## Usage
+
+### ETH1 / Normal Keystore
 
 To extract a private key from an existing keystore file, just do the following.
 
@@ -110,6 +99,24 @@ let keystore = try Keystore(privateKey: privateKey, password: password)
 
 let keystoreJson = try JSONEncoder().encode(keystore)
 print(String(data: keystoreJson, encoding: .utf8))       // Your encrypted keystore as a json string
+```
+
+### ETH2 / BLS Keystore
+
+To extract a private key from an existing keystore file, just do the following.
+
+```Swift
+import Keystore
+
+let decoder = JSONDecoder()
+
+let keystoreData: Data = ... // Load keystore data from file?
+let keystore = try decoder.decode(KeystoreETH2.self, from: keystoreData)
+
+let password = "your_super_secret_password"
+let privateKey = try keystore.privateKey(password: password)
+
+print(privateKey)    // Your decrypted private key
 ```
 
 ## Author
