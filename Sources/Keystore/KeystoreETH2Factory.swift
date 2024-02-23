@@ -1,5 +1,6 @@
 import Foundation
 import CryptoSwift
+import Scrypt
 
 public struct KeystoreETH2Factory {
 
@@ -76,16 +77,14 @@ public struct KeystoreETH2Factory {
                 throw Error.kdfInputsMalformed
             }
 
-            let scrypt = try Scrypt(
+            return try Data(scrypt(
                 password: password.bytes,
                 salt: saltData.bytes,
-                dkLen: kdf.params.dklen,
-                N: n,
-                r: r,
-                p: p
-            ).calculate()
-
-            return Data(scrypt)
+                length: kdf.params.dklen,
+                N: UInt64(n),
+                r: UInt32(r),
+                p: UInt32(p)
+            ))
         }
 
         // PBKDF2
