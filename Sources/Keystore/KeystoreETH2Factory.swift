@@ -57,7 +57,7 @@ public struct KeystoreETH2Factory {
         let aes = try AES(
             key: [UInt8](usableKey),
             blockMode: CTR(iv: ivData.bytes),
-            padding: .pkcs7
+            padding: .noPadding
         )
 
         return try aes.decrypt([UInt8](ciphertextData))
