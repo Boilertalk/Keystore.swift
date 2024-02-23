@@ -1,22 +1,10 @@
 <a href="https://github.com/Boilertalk/Keystore.swift">
-  <img src="https://storage.googleapis.com/boilertalk/logo.svg" width="100%" height="256">
+  <img src="https://crypto-bot-main.fra1.digitaloceanspaces.com/old/keystore-swift.svg" width="100%" height="256">
 </a>
 
 <p align="center">
   <a href="https://travis-ci.com/Boilertalk/Keystore.swift">
     <img src="https://travis-ci.com/Boilertalk/Keystore.swift.svg?branch=master" alt="CI Status">
-  </a>
-  <a href="http://cocoapods.org/pods/Keystore">
-    <img src="https://img.shields.io/cocoapods/v/Keystore.svg?style=flat" alt="Version">
-  </a>
-  <a href="http://cocoapods.org/pods/Keystore">
-    <img src="https://img.shields.io/cocoapods/l/Keystore.svg?style=flat" alt="License">
-  </a>
-  <a href="http://cocoapods.org/pods/Keystore">
-    <img src="https://img.shields.io/cocoapods/p/Keystore.svg?style=flat" alt="Platform">
-  </a>
-  <a href="https://github.com/Carthage/Carthage">
-    <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible">
   </a>
   <a href="https://t.me/joinchat/BPk3DE6CTFaiOolSIZNLyg">  
     <img src="https://img.shields.io/badge/chat-on%20telegram-blue.svg?longCache=true&style=flat" alt="Telegram">
