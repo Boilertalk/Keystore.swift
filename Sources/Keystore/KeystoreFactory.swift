@@ -49,11 +49,12 @@ public struct KeystoreFactory {
         guard splittedCipher.count == 3, splittedCipher[0] == "aes", splittedCipher[1] == "128" else {
             throw Error.cipherNotAvailable
         }
-        guard let blockmode = IVBlockModeType(rawValue: splittedCipher[2].lowercased())?.blockMode(iv: [UInt8](ivData)) else {
+        guard let blockmodeType = IVBlockModeType(rawValue: splittedCipher[2].lowercased()) else {
             throw Error.cipherNotAvailable
         }
+        let blockmode = blockmodeType.blockMode(iv: [UInt8](ivData))
 
-        let aes = try AES(key: [UInt8](usableKey), blockMode: blockmode, padding: .pkcs7)
+        let aes = try AES(key: [UInt8](usableKey), blockMode: blockmode, padding: blockmodeType.padding())
 
         return try aes.decrypt([UInt8](ciphertextData))
     }
@@ -90,7 +91,7 @@ public struct KeystoreFactory {
         let usableKey = key[0..<16]
 
         let blockMode = cipher.blockMode(iv: iv)
-        let aes = try AES(key: [UInt8](usableKey), blockMode: blockMode, padding: .pkcs7)
+        let aes = try AES(key: [UInt8](usableKey), blockMode: blockMode, padding: cipher.padding())
 
         let ciphertextData = try Data(aes.encrypt(privateKey))
         let ciphertext = ciphertextData.hexString
@@ -190,6 +191,15 @@ public enum IVBlockModeType: String {
             return OFB(iv: iv)
         case .pcbc:
             return OFB(iv: iv)
+        }
+    }
+
+    public func padding() -> Padding {
+        switch self {
+        case .ctr:
+            return .noPadding
+        default:
+            return .pkcs7
         }
     }
 }
